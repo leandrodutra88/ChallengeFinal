@@ -1,0 +1,231 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: #E5E5E5;
+}
+.contenedor {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+.logo {
+    position: absolute;
+    height: 48px;
+    left: 120px;
+    top: 40px;
+}
+.encriptador{
+    margin: 0 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.encriptador_form{
+    flex-basis: calc(65% - 80px);
+}
+.texto_en_area{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#texto{
+    flex-basis: 100%;
+    margin-top: 168px;
+    margin-left: 50px;
+    font-size: 32px;
+    color:#0A3871;
+    background-color: transparent;
+    border: none;
+}
+#texto:focus{
+    outline: none
+}
+.texto_info{
+    width: 100%;
+    position: relative;
+}
+.info {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 16px 60px;
+}
+.info p {
+    margin-left: 8px;
+    display: inline-block;
+    color: #3d3d3d;
+}
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.btn_encriptar {
+    padding: 20px;
+    position: relative;
+    width: 40%;
+    background: #0A3871;
+    border-radius: 25px ;
+    color: #FFFFFF;
+}
+.btn_encriptar :hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.btn_desencriptar {
+    padding: 20px;
+    position: relative;
+    margin-left: 30px;
+    width: 40%;
+    background: #D8DFE8;
+    border-radius: 25px ;
+    color: #0A3871;
+}
+.btn_desencriptar :hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.resultado {
+    height: 730px;
+    width: 100%;
+    margin: 40px 40px;
+    flex-basis: calc(35% - 80px);
+}
+.contenedor_resultado {
+    width: 90%;
+    min-width: 300px;
+    height: 100%;
+    background: #FFFFFF;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+ } 
+ .imagen_resultado {
+    width: 180px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+.imagen_resultado img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.contenido_resuelto {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.parrafo-panel-superior{
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #343A40;
+}
+.parrafo-panel-inferior{
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    color: #495057;
+}
+#textoResultado {
+    font-size: 24px;
+    color: #495057  ;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    right: 25px;
+    height: 85%;
+    resize: none;
+    border: 1px;
+    background: transparent;
+}
+.contenido_resuelto button {
+    position: absolute;
+    bottom: 50px;
+    padding: 20px;
+    position: relative;
+    top: 90px;
+    width: 60%;
+    background: #FFFFFF;
+    border-radius: 25px ;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    visibility: hidden;
+}
+.contenido_resuelto button:active{
+    transform: scale(0.9);
+}
+.footer {
+    color: #052751;
+    background-color: #FFFFFF;
+    font-size: 24px;
+    margin: 80px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 860px){
+    
+    .encriptador {
+        margin: 0;
+    }
+
+    .texto_en_area{
+        height: 700px;
+    }
+    .info p {
+        font-size: 12px;
+    }
+
+    .resultado {
+        height: 100%;
+        
+    }
+
+    .contenedor_resultado {
+        width: 550px;
+    }
+
+    .imagen_resultado {
+        display: none;
+    }
+
+    .contenido_resuelto button {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #texto {
+        font-size: 25px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn_encriptar {
+        width: 80%;
+    }
+    .btn_desencriptar {
+        width: 80%;
+        margin: 0;
+    }
+
+    .contenedor_resultado {
+        width: 320px;
+    }
+}
